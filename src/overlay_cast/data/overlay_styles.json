@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "package": "overlay-cast",
+  "transition_count": 25,
+  "categories": [
+    "ui_overlay_social"
+  ],
+  "transitions": [
+    {
+      "name": "Social Media Frame",
+      "slug": "social_media_frame",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Phone Screen Overlay",
+      "slug": "phone_screen_overlay",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Notification Popups",
+      "slug": "notification_popups",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Chat Messages",
+      "slug": "chat_messages",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Live Stream Overlay",
+      "slug": "live_stream_overlay",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Like Hearts",
+      "slug": "like_hearts",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Subscribe Button",
+      "slug": "subscribe_button",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Progress Bar",
+      "slug": "progress_bar",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Loading Spinner",
+      "slug": "loading_spinner",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Lower Third",
+      "slug": "lower_third",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "News Ticker",
+      "slug": "news_ticker",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Scorebug",
+      "slug": "scorebug",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Map Pin Overlay",
+      "slug": "map_pin_overlay",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Callout Box",
+      "slug": "callout_box",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Redaction Bars",
+      "slug": "redaction_bars",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Warning Label",
+      "slug": "warning_label",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Watermark",
+      "slug": "watermark",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Picture in Picture",
+      "slug": "picture_in_picture",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Split Screen Grid",
+      "slug": "split_screen_grid",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Vertical Reels Layout",
+      "slug": "vertical_reels_layout",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Podcast Waveform",
+      "slug": "podcast_waveform",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Audio Visualizer",
+      "slug": "audio_visualizer",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Comment Storm",
+      "slug": "comment_storm",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Poll Overlay",
+      "slug": "poll_overlay",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    },
+    {
+      "name": "Breaking News Frame",
+      "slug": "breaking_news_frame",
+      "categories": [
+        "ui_overlay_social"
+      ]
+    }
+  ]
+}

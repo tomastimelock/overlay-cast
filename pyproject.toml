@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "overlay-cast"
+version = "0.1.0"
+description = "25 social UI and broadcast overlay styles — lower thirds, news tickers, phone mockups, live stream HUDs, split screen, vertical Reels, waveforms"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [{ name = "Trollfabriken AITrix AB", email = "dev@trollfabriken.se" }]
+keywords = ["video", "overlay", "lower-third", "broadcast", "social-media", "reels", "streaming"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Multimedia :: Video :: Conversion",
+    "Topic :: Multimedia :: Graphics",
+]
+
+dependencies = [
+    "video-fx>=0.1",
+    "pydantic>=2.5",
+    "numpy>=1.24",
+    "Pillow>=10.0",
+    "opencv-python-headless>=4.8",
+    "ffmpeg-python>=0.2",
+]
+
+[project.optional-dependencies]
+overlay = ["web-overlay>=0.1"]
+multicam = ["video-arrange>=0.1"]
+audio = ["audio-arrange>=0.1"]
+dev = ["pytest>=7", "pytest-cov>=4", "ruff>=0.4", "build"]
+all = ["overlay-cast[overlay,multicam,audio]"]
+
+[project.scripts]
+overlay-cast = "overlay_cast.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/tomastimelock/overlay-cast"
+Issues = "https://github.com/tomastimelock/overlay-cast/issues"
+Source = "https://github.com/tomastimelock/overlay-cast"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/overlay_cast"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/overlay_cast/data/overlay_styles.json" = "overlay_cast/data/overlay_styles.json"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["E501", "B007", "B008", "B905", "RUF012", "RUF059", "UP006", "UP007", "UP035", "SIM102", "SIM105", "SIM108", "E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+
+[tool.coverage.run]
+source = ["src/overlay_cast"]
+branch = true
